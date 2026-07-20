@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>200 idées pour viser la licorne — Playbooks IA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E1318; --panel:#151C24; --panel-2:#1A232D; --panel-3:#202C38;
+    --line:#26313D; --line-2:#324050;
+    --ink:#EEF1F4; --muted:#8A99A8; --muted-2:#5E6E7D;
+    --gold:#F5B33C; --gold-soft:#3a2f17;
+    --teal:#3DD6C4; --teal-soft:#15302e;
+    --coral:#FF7E8E; --coral-soft:#352026;
+    --blue:#4d8fc9; --green:#5FD08A; --red:#F26D6D;
+    --disp:'Bricolage Grotesque',Georgia,serif;
+    --body:'Inter',system-ui,sans-serif;
+    --mono:'Space Mono',ui-monospace,monospace;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+  /* HEADER */
+  header{border-bottom:1px solid var(--line);padding:54px 0 40px;
+    background:radial-gradient(1100px 380px at 80% -120px,rgba(245,179,60,.11),transparent 60%),radial-gradient(900px 320px at 6% -90px,rgba(255,126,142,.07),transparent 60%);}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 18px;display:flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+  h1{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;line-height:.97;margin:0;font-size:clamp(36px,6.6vw,78px)}
+  h1 .g{color:var(--gold)}
+  .lede{max-width:700px;margin:22px 0 0;font-size:clamp(15px,2.2vw,18px);color:var(--muted)}
+  .lede b{color:var(--ink);font-weight:600}
+  .refs{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .ref{border:1px solid var(--line);border-radius:13px;padding:14px 16px;background:rgba(255,255,255,.015);max-width:340px}
+  .ref h4{font-family:var(--disp);font-weight:700;font-size:15px;margin:0 0 4px}
+  .ref .r-money{font-family:var(--mono);font-size:12px;color:var(--gold)}
+  .ref p{margin:6px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+
+  /* REALITY PANEL */
+  .reality{border-bottom:1px solid var(--line);padding:34px 0}
+  .reality-h{font-family:var(--disp);font-weight:800;font-size:clamp(20px,3.4vw,28px);margin:0 0 6px;letter-spacing:-.01em}
+  .reality-s{color:var(--muted);margin:0 0 22px;max-width:640px;font-size:14.5px}
+  .checks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .check{border:1px solid var(--line-2);border-radius:14px;padding:18px;background:var(--panel);position:relative}
+  .check::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:var(--red)}
+  .check .ct{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin:0 0 8px}
+  .check h5{font-family:var(--disp);font-weight:700;font-size:16px;margin:0 0 6px}
+  .check p{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+  .check b{color:var(--ink)}
+
+  /* SECTION TITLES */
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin:58px 0 8px;flex-wrap:wrap}
+  .sec-idx{font-family:var(--mono);font-size:13px;color:var(--gold)}
+  .sec-title{font-family:var(--disp);font-weight:800;font-size:clamp(24px,4vw,38px);letter-spacing:-.015em;margin:0}
+  .sec-sub{color:var(--muted);max-width:680px;margin:6px 0 0;font-size:14.5px}
+
+  /* TOP PICKS */
+  .pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+  .pick{position:relative;border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,var(--panel-2),var(--panel));padding:22px 22px 20px}
+  .pick::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),#c97f1a)}
+  .pick-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .rank{font-family:var(--mono);font-weight:700;font-size:34px;color:var(--gold);line-height:1}
+  .pick-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+  .pick h3{font-family:var(--disp);font-weight:700;font-size:21px;letter-spacing:-.01em;margin:0 0 8px}
+  .pick .pb{color:var(--muted);font-size:14px;margin:0 0 16px}
+  .pick dl{margin:0;border-top:1px solid var(--line);padding-top:14px}
+  .pick dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);margin-top:11px}
+  .pick dt:first-child{margin-top:0}
+  .pick dd{margin:3px 0 0;font-size:13.5px;color:var(--ink)}
+  .pick dd.money{color:var(--gold)}
+  .pick dd.risk{color:var(--coral)}
+
+  /* FILTER BAR */
+  .filterbar{position:sticky;top:0;z-index:30;background:rgba(14,19,24,.86);backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px}
+  .fb-inner{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap}
+  .search{flex:1;min-width:200px;position:relative}
+  .search input{width:100%;background:var(--panel);border:1px solid var(--line-2);color:var(--ink);border-radius:10px;padding:11px 14px 11px 38px;font-family:var(--body);font-size:14px;outline:none}
+  .search input::placeholder{color:var(--muted-2)}
+  .search input:focus{border-color:var(--gold)}
+  .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.5}
+  .segs{display:flex;gap:6px;flex-wrap:wrap}
+  .seg{font-family:var(--mono);font-size:12px;cursor:pointer;user-select:none;background:var(--panel);border:1px solid var(--line-2);color:var(--muted);padding:9px 13px;border-radius:9px;transition:.12s}
+  .seg:hover{color:var(--ink)}
+  .seg[aria-pressed="true"]{background:var(--ink);color:#0E1318;border-color:var(--ink);font-weight:700}
+  .seg.medvi[aria-pressed="true"]{background:var(--gold);border-color:var(--gold)}
+  .seg.calai[aria-pressed="true"]{background:var(--coral);border-color:var(--coral)}
+  .seg.agent[aria-pressed="true"]{background:var(--teal);border-color:var(--teal)}
+  .seg.b2b[aria-pressed="true"]{background:var(--teal);border-color:var(--teal)}
+  .seg.b2c[aria-pressed="true"]{background:var(--coral);border-color:var(--coral)}
+  .count{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap}
+  .count b{color:var(--gold)}
+  .reset{font-family:var(--mono);font-size:12px;color:var(--muted-2);background:none;border:none;cursor:pointer;text-decoration:underline;padding:4px}
+  .reset:hover{color:var(--ink)}
+
+  /* PLAYBOOK + CATALOGUE */
+  .playbook{margin-top:54px}
+  .pb-head{border-top:2px solid var(--line-2);padding-top:20px;margin-bottom:6px}
+  .pb-kicker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 6px}
+  .pb-head h2{font-family:var(--disp);font-weight:800;font-size:clamp(22px,3.6vw,32px);letter-spacing:-.015em;margin:0}
+  .pb-head p{color:var(--muted);max-width:720px;margin:8px 0 0;font-size:14px}
+  .pbA .pb-kicker{color:var(--gold)} .pbB .pb-kicker{color:var(--coral)} .pbC .pb-kicker{color:var(--teal)}
+
+  .catsec{margin-top:38px}
+  .cat-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:11px;margin-bottom:16px;flex-wrap:wrap}
+  .cat-id{font-family:var(--mono);font-size:12px;color:var(--muted-2)}
+  .cat-name{font-family:var(--disp);font-weight:700;font-size:19px;letter-spacing:-.01em;margin:0}
+  .cat-n{font-family:var(--mono);font-size:12px;color:var(--muted-2);margin-left:auto}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .card{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:15px 15px 13px;display:flex;flex-direction:column;transition:border-color .15s,transform .15s,background .15s}
+  .card:hover{border-color:var(--line-2);background:var(--panel-2);transform:translateY(-2px)}
+  .card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}
+  .meter{display:flex;align-items:center;gap:7px}
+  .bar{width:44px;height:5px;border-radius:4px;background:var(--line);overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px}
+  .tier{font-family:var(--mono);font-size:10px;letter-spacing:.03em;text-transform:uppercase}
+  .card h4{font-family:var(--disp);font-weight:700;font-size:15px;letter-spacing:-.005em;margin:0 0 6px;line-height:1.2}
+  .card p{margin:0 0 12px;font-size:12.5px;color:var(--muted);line-height:1.45;flex:1}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:6px;border:1px solid transparent;white-space:nowrap}
+  .chip.medvi{color:var(--gold);background:var(--gold-soft);border-color:rgba(245,179,60,.28)}
+  .chip.calai{color:var(--coral);background:var(--coral-soft);border-color:rgba(255,126,142,.25)}
+  .chip.agent{color:var(--teal);background:var(--teal-soft);border-color:rgba(61,214,196,.25)}
+  .chip.b2b{color:var(--teal);background:var(--teal-soft);border-color:rgba(61,214,196,.25)}
+  .chip.b2c{color:var(--coral);background:var(--coral-soft);border-color:rgba(255,126,142,.25)}
+  .chip.d{color:var(--muted);background:rgba(255,255,255,.03);border-color:var(--line)}
+  .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .badge{font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:6px}
+  .badge.fit{color:#0E1318;background:var(--gold);font-weight:700}
+  .empty{text-align:center;color:var(--muted-2);font-family:var(--mono);font-size:13px;padding:60px 0}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);margin-top:70px;padding:44px 0 60px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+  footer h3{font-family:var(--disp);font-weight:700;font-size:22px;margin:0 0 12px}
+  footer p{color:var(--muted);font-size:14px;margin:0 0 12px;max-width:560px}
+  footer p b{color:var(--ink)}
+  .steps{list-style:none;padding:0;margin:8px 0 0;counter-reset:s}
+  .steps li{counter-increment:s;position:relative;padding:9px 0 9px 34px;font-size:13.5px;color:var(--ink);border-top:1px solid var(--line)}
+  .steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:9px;font-family:var(--mono);font-size:12px;color:var(--gold)}
+  .legend{font-family:var(--mono);font-size:11px;color:var(--muted-2);margin-top:8px;line-height:1.9}
+  .legend span{color:var(--ink)}
+
+  @media(max-width:880px){.checks{grid-template-columns:1fr}.pick-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.foot-grid{grid-template-columns:1fr;gap:24px}.refs .ref{max-width:none}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Playbooks IA &middot; Cap licorne</p>
+    <h1>200 idées pour<br>viser la <span class="g">licorne</span></h1>
+    <p class="lede">Pas des petits SaaS, mais des business à <b>fort levier IA</b> — le genre qui peut faire 8 ou 9 chiffres avec une équipe minuscule. Tout est rangé selon les <b>3 modèles qui marchent</b>, et inspiré directement de tes références. Avant les idées, lis les contrôles de réalité : ils séparent ce qu'il faut copier de ce qui t'envoie au tribunal.</p>
+    <div class="refs">
+      <div class="ref">
+        <h4>Medvi</h4>
+        <span class="r-money">401 M$ an 1 &middot; vise 1,8 Md$ &middot; 2 personnes</span>
+        <p>Télésanté GLP-1. Possède le client (marque, acquisition), <b>loue toute l'infra médicale</b>, l'IA fait le code, les pubs, le support.</p>
+      </div>
+      <div class="ref">
+        <h4>Cal AI &mdash; Zach Yadegari, 18 ans</h4>
+        <span class="r-money">~40 M$/an &middot; 8,3 M téléchargements &middot; revendu</span>
+        <p>Photo du repas → calories. <b>Un usage net, l'IA fait la magie</b>, abo mobile à bas prix, croissance par la pub sociale.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="reality">
+  <div class="wrap">
+    <h2 class="reality-h">3 contrôles de réalité (lis ça d'abord)</h2>
+    <p class="reality-s">Le mythe « 0 employé → 1 milliard » est à moitié faux. Voici ce que les chiffres cachent — et ce qui décide vraiment si tu gagnes.</p>
+    <div class="checks">
+      <div class="check">
+        <p class="ct">Piège n°1 &middot; la fraude</p>
+        <h5>Le playbook ≠ les méthodes de Medvi</h5>
+        <p>Ce qu'on copie : <b>posséder le client, louer l'infra réglementée</b>. Ce qu'on ne copie JAMAIS : Medvi a utilisé de <b>faux médecins, faux avis, faux avant/après</b>. En santé/finance en France, ça = fermeture + tribunal. Tu loues de vrais partenaires agréés, tu ne les inventes pas.</p>
+      </div>
+      <div class="check">
+        <p class="ct">Piège n°2 &middot; « 0 employé »</p>
+        <h5>Cal AI, c'est 30 personnes et 770 k$/mois de pub</h5>
+        <p>L'IA construit le produit pour pas cher. Mais le <b>vrai moteur, c'est la distribution payante</b> — et elle coûte cher. L'idée géniale ne suffit pas : sans budget et machine d'acquisition, ça ne décolle pas. C'est là que ta force d'agence compte le plus.</p>
+      </div>
+      <div class="check">
+        <p class="ct">Piège n°3 &middot; le wrapper jetable</p>
+        <h5>Si un meilleur modèle te tue, c'est pas un business</h5>
+        <p>Le test : ton produit doit <b>s'améliorer quand les modèles s'améliorent</b>, pas paniquer. Construis un avantage que l'IA seule n'a pas : marque, distribution, données propriétaires, parcours métier. Un simple « ChatGPT habillé » se fait copier en un week-end.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <span class="sec-idx">SÉLECTION</span>
+    <h2 class="sec-title">Les 12 plus prometteuses</h2>
+  </div>
+  <p class="sec-sub">Meilleur croisement entre potentiel d'échelle et faisabilité réelle pour toi. Le tag <span style="color:var(--gold);font-family:var(--mono);font-size:12px">FIT TOI</span> = aligné avec ta force (e-commerce, marketing, agence IA, marché français).</p>
+  <div class="pick-grid" id="picks"></div>
+</section>
+
+<div class="filterbar">
+  <div class="wrap fb-inner">
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="q" placeholder="Chercher une idée, un secteur, un mot-clé…" aria-label="Rechercher">
+    </div>
+    <div class="segs" id="seg-model">
+      <button class="seg" data-model="all" aria-pressed="true">Tout</button>
+      <button class="seg medvi" data-model="medvi" aria-pressed="false">Medvi</button>
+      <button class="seg calai" data-model="calai" aria-pressed="false">Cal AI</button>
+      <button class="seg agent" data-model="agent" aria-pressed="false">Agent</button>
+    </div>
+    <div class="segs" id="seg-type">
+      <button class="seg" data-type="all" aria-pressed="true">B2B/B2C</button>
+      <button class="seg b2b" data-type="B2B" aria-pressed="false">B2B</button>
+      <button class="seg b2c" data-type="B2C" aria-pressed="false">B2C</button>
+    </div>
+    <span class="count" id="count"></span>
+    <button class="reset" id="reset">réinitialiser</button>
+  </div>
+</div>
+
+<section class="wrap" id="catalogue">
+  <div id="grid"></div>
+  <div class="empty" id="empty" style="display:none">Aucune idée pour ces filtres. <span style="cursor:pointer;text-decoration:underline" onclick="document.getElementById('reset').click()">réinitialiser</span></div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h3>La vérité que personne ne dit</h3>
+      <p>Dans les DEUX modèles (Medvi et Cal AI), le produit n'est pas le moat — la <b>distribution</b> l'est. L'IA rend le build quasi gratuit, donc tout le monde peut construire. Celui qui gagne est celui qui <b>acquiert des clients moins cher que les autres</b>. C'est exactement ta zone de génie si tu maîtrises l'acquisition.</p>
+      <p style="color:var(--ink)"><b>Si j'étais toi, je partirais d'ici :</b></p>
+      <ol class="steps">
+        <li>Choisis <b>un modèle, pas trois</b>. Vu ton profil : Medvi appliqué à l'e-commerce (studio de marques DTC piloté par IA) OU un agent IA e-commerce vendu à tes clients d'agence.</li>
+        <li>Trouve un <b>angle de distribution déloyal</b> : une audience que tu atteins moins cher que les autres (créateurs, une niche FR, un canal sous-exploité).</li>
+        <li>Lance un <b>test d'acquisition à 500–1 000 €</b> avant de tout construire. Si le coût d'acquisition < valeur client, tu tiens quelque chose. Sinon, tu changes d'angle.</li>
+        <li>Loue toute l'infra lourde (paiement, logistique, partenaires agréés). <b>Ne construis jamais ce que tu peux louer.</b></li>
+        <li>Empile les agents IA pour les opérations (support, contenu, ads) et garde l'humain sur le <b>jugement</b> — la seule chose que l'IA ne fait pas (souviens-toi des faux prix hallucinés de Medvi).</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Lecture des cartes</h3>
+      <div class="legend">
+        <div style="margin-bottom:8px"><span style="color:var(--gold)">Medvi</span> posséder le client, louer l'infra<br><span style="color:var(--coral)">Cal AI</span> app grand public virale<br><span style="color:var(--teal)">Agent</span> agent IA B2B (travail accompli)</div>
+        <div><span class="dot" style="background:var(--gold)"></span><span>Licorne</span> potentiel 80+ &middot; <span class="dot" style="background:var(--teal)"></span><span>Très gros</span> 68–79</div>
+        <div><span class="dot" style="background:var(--blue)"></span><span>Gros</span> 56–67 &middot; <span class="dot" style="background:var(--muted-2)"></span><span>Niche+</span> &lt;56</div>
+        <div style="margin-top:8px">Facile <span class="dot" style="background:var(--green)"></span> &middot; Moyen <span class="dot" style="background:var(--gold)"></span> &middot; Dur <span class="dot" style="background:var(--red)"></span></div>
+        <div style="margin-top:14px;color:var(--muted-2)">Le score = potentiel d'échelle estimé, pas une promesse. En santé, finance et compléments, vérifie toujours la réglementation FR/UE avant de lancer (agréments, claims, RGPD).</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ================= DATA ================= */
+const PLAYBOOKS = [
+  {id:"A", cls:"pbA", kicker:"Playbook A · Modèle Medvi", name:"Posséder le client, louer l'infra", desc:"Tu possèdes la marque, l'acquisition et l'expérience. Tu loues toute l'infra lourde et réglementée (médecins, pharmacie, banque, assurance, logistique) via des partenaires agréés. Les agents IA font le code, les pubs et le support. Marge sur le volume. Attention : santé, finance et compléments sont très réglementés en France — tu loues de VRAIS partenaires agréés."},
+  {id:"B", cls:"pbB", kicker:"Playbook B · Modèle Cal AI", name:"Une app grand public virale", desc:"Un seul usage du quotidien, l'IA fait la magie (photo/voix/scan → résultat). Mobile, abo à bas prix, gros volume. Le hook doit être démontrable et partageable. Le moteur réel : la distribution payante (pub sociale, influence). C'est là que ça coûte cher et que tu fais la différence."},
+  {id:"C", cls:"pbC", kicker:"Playbook C · Agents IA verticaux", name:"Vendre du travail accompli, pas un logiciel", desc:"B2B. Un agent IA qui remplace une fonction ou un service entier et facture le résultat (ticket résolu, lead qualifié) plutôt qu'un siège. Forte rétention car critique. Ta zone naturelle via ton agence : tu peux vendre le service d'abord, puis le produitiser."},
+];
+
+const CATS = [
+  // A — Medvi
+  {id:"a1", pb:"A", n:"Télésanté & longévité"},
+  {id:"a2", pb:"A", n:"Santé mentale & soins spécialisés (à distance)"},
+  {id:"a3", pb:"A", n:"Finance, paiement & crédit (infra louée)"},
+  {id:"a4", pb:"A", n:"Assurance nouvelle génération"},
+  {id:"a5", pb:"A", n:"DTC & e-commerce piloté par agents IA"},
+  {id:"a6", pb:"A", n:"Marketplaces de services à infra louée"},
+  {id:"a7", pb:"A", n:"Cabinet de services pro automatisé"},
+  // B — Cal AI
+  {id:"b1", pb:"B", n:"Nutrition & alimentation (scan / photo)"},
+  {id:"b2", pb:"B", n:"Fitness, sport & corps"},
+  {id:"b3", pb:"B", n:"Apparence, beauté & soin"},
+  {id:"b4", pb:"B", n:"Confiance, séduction & relations"},
+  {id:"b5", pb:"B", n:"Santé & mieux-être perso"},
+  {id:"b6", pb:"B", n:"Productivité & « l'IA fait le taf »"},
+  {id:"b7", pb:"B", n:"Créatif : photo & design"},
+  {id:"b8", pb:"B", n:"Créatif : vidéo, audio & musique"},
+  {id:"b9", pb:"B", n:"Apprentissage, langues & enfants"},
+  // C — Agents
+  {id:"c1", pb:"C", n:"Agents qui remplacent un service métier"},
+  {id:"c2", pb:"C", n:"Agents d'acquisition, vente & marketing"},
+  {id:"c3", pb:"C", n:"Agents d'opérations & back-office"},
+  {id:"c4", pb:"C", n:"Agents sectoriels (immo, santé, resto, BTP…)"},
+];
+
+const IDEAS = [
+// a1
+{c:"a1",m:"medvi",b:"B2C",d:3,s:84,fit:1,t:`Télé-suivi perte de poids (GLP-1)`,p:`Le créneau de Medvi : médecins et pharmacie agréés loués, l'IA gère acquisition, parcours et support 24/7. Très réglementé en FR.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:80,t:`Télémédecine dermato à distance`,p:`Acné, chute de cheveux : dermatologues agréés loués, l'IA fait le tri photo et le parcours de soin.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:78,t:`Plateforme longévité & prévention`,p:`Bilans, suppléments, suivi : labos et médecins partenaires, l'IA orchestre l'accompagnement.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:76,t:`Santé masculine à distance`,p:`Testostérone, libido, énergie : médecins loués, l'IA gère le suivi et la fidélisation.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:74,t:`Suivi ménopause & hormonal`,p:`Gynécologues loués, l'IA accompagne au quotidien une cible sous-servie et fidèle.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:72,t:`Skincare prescriptif anti-âge`,p:`Dermatos loués, diagnostic photo par IA, produits sur ordonnance livrés en abonnement.`},
+{c:"a1",m:"medvi",b:"B2C",d:3,s:70,t:`Dépistage & bilans à domicile`,p:`Labos partenaires pour les prélèvements, l'IA interprète et oriente vers l'action.`},
+{c:"a1",m:"medvi",b:"B2C",d:2,s:68,t:`Nutrition médicale (diabète, cholestérol)`,p:`Diététiciens et médecins loués, l'IA personnalise le suivi entre les consultations.`},
+{c:"a1",m:"medvi",b:"B2C",d:2,s:66,t:`Sommeil médicalisé`,p:`Médecins du sommeil loués, l'IA coache et ajuste le programme nuit après nuit.`},
+{c:"a1",m:"medvi",b:"B2C",d:2,s:64,t:`Arrêt tabac & addictions accompagné`,p:`Médecins et substituts loués, l'IA assure le soutien permanent qui fait tenir.`},
+// a2
+{c:"a2",m:"medvi",b:"B2C",d:2,s:76,t:`Thérapie à distance verticalisée`,p:`Anxiété, burnout : psys agréés loués, l'IA gère le matching, les rappels et le suivi.`},
+{c:"a2",m:"medvi",b:"B2C",d:3,s:74,t:`Plateforme TDAH (bilan + suivi)`,p:`Médecins loués, l'IA structure le parcours d'un marché en forte demande.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:68,t:`Soutien post-partum`,p:`Sages-femmes et psys loués, l'IA accompagne les jeunes mères, créneau très fidèle.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:66,t:`Télé-orthophonie enfants`,p:`Orthophonistes loués, l'IA propose les exercices et suit les progrès à la maison.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:62,t:`Soutien aux aidants familiaux`,p:`Pros et ressources loués, l'IA épaule ceux qui s'occupent d'un proche malade.`},
+{c:"a2",m:"medvi",b:"B2C",d:3,s:64,t:`Suivi nutrition + psy encadré`,p:`Mise en relation avec des professionnels agréés (pas de conseil auto), l'IA coordonne le parcours.`},
+{c:"a2",m:"medvi",b:"B2C",d:3,s:60,t:`Douleur chronique pluridisciplinaire`,p:`Kinés, médecins, psys loués, l'IA coordonne un parcours aujourd'hui éclaté.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:58,t:`Sexothérapie & couple à distance`,p:`Thérapeutes loués, l'IA gère discrétion, matching et continuité du suivi.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:56,t:`Accompagnement deuil & épreuves`,p:`Professionnels et ressources loués, l'IA assure une présence entre les séances.`},
+{c:"a2",m:"medvi",b:"B2C",d:2,s:58,t:`Coaching addiction écrans/jeux`,p:`Thérapeutes loués, l'IA suit les déclencheurs et maintient l'engagement.`},
+// a3
+{c:"a3",m:"medvi",b:"B2B",d:3,s:78,t:`Néobanque pour freelances`,p:`Infra bancaire (BaaS) louée, l'IA fait conseil, catégorisation et pré-compta. Gros marché FR.`},
+{c:"a3",m:"medvi",b:"B2B",d:3,s:76,fit:1,t:`Compte pro micro-entrepreneurs FR`,p:`Infra louée, l'IA gère facturation, URSSAF et déclarations. Douleur française massive.`},
+{c:"a3",m:"medvi",b:"B2B",d:3,s:74,fit:1,t:`Trésorerie pour e-commerçants`,p:`Prêteur agréé loué, l'IA analyse les ventes pour avancer la trésorerie au bon moment.`},
+{c:"a3",m:"medvi",b:"B2C",d:3,s:72,t:`BNPL / crédit de niche`,p:`Prêteur agréé loué, l'IA score et cible un segment précis (santé, éducation, mobilité).`},
+{c:"a3",m:"medvi",b:"B2B",d:3,s:70,t:`Affacturage instantané`,p:`Financeur loué, l'IA débloque le cash des factures freelance en quelques minutes.`},
+{c:"a3",m:"medvi",b:"B2C",d:2,s:68,t:`Garant de loyer digital`,p:`Assureur/financeur loué, l'IA monte le dossier et sécurise propriétaire et locataire.`},
+{c:"a3",m:"medvi",b:"B2C",d:2,s:66,t:`Épargne automatisée à objectif`,p:`Infra louée, l'IA met de côté pour un but précis sans que l'utilisateur y pense.`},
+{c:"a3",m:"medvi",b:"B2C",d:3,s:64,t:`Cashback communautaire`,p:`Infra carte louée, l'IA personnalise les récompenses d'une communauté (gamers, parents).`},
+{c:"a3",m:"medvi",b:"B2C",d:3,s:62,t:`Transfert pour diaspora ciblée`,p:`Partenaire agréé loué, l'IA fluidifie l'envoi d'argent vers un corridor précis.`},
+{c:"a3",m:"medvi",b:"B2C",d:3,s:60,t:`Patrimoine pour jeunes actifs`,p:`Courtier loué, l'IA rend l'investissement pédagogique (info, pas conseil personnalisé).`},
+// a4
+{c:"a4",m:"medvi",b:"B2C",d:3,s:72,t:`Assurance animaux 100% digitale`,p:`Porteur de risque loué, l'IA gère souscription et sinistres par photo. Marché en plein boom.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:70,t:`Assurance emprunteur moins chère`,p:`Assureur loué, l'IA simplifie la résiliation/substitution (loi Lemoine) et l'adhésion.`},
+{c:"a4",m:"medvi",b:"B2B",d:2,s:68,fit:1,t:`Assurance pro freelances & créateurs`,p:`Porteur loué, l'IA adapte la couverture et gère les sinistres pour les indépendants.`},
+{c:"a4",m:"medvi",b:"B2B",d:2,s:66,t:`Assurance loyers impayés`,p:`Porteur loué, l'IA évalue le dossier locataire et automatise la gestion pour les proprios.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:64,t:`Mutuelle santé verticale`,p:`Porteur loué, l'IA conçoit l'offre pour un segment précis (seniors, étudiants, indés).`},
+{c:"a4",m:"medvi",b:"B2B",d:2,s:62,fit:1,t:`Assurance colis & litiges e-commerce`,p:`Porteur loué, l'IA gère les réclamations à la place du marchand.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:60,t:`Assurance matériel / vélo / trottinette`,p:`Porteur loué, l'IA traite les sinistres par photo en quelques secondes.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:58,t:`Assurance voyage à la demande`,p:`Porteur loué, l'IA active la couverture juste pour la durée du déplacement.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:56,t:`Garantie panne auto / électroménager`,p:`Porteur loué, l'IA gère la souscription et le diagnostic de panne à distance.`},
+{c:"a4",m:"medvi",b:"B2C",d:2,s:54,t:`Assurance déménagement & biens`,p:`Porteur loué, l'IA chiffre et indemnise les biens transportés.`},
+// a5
+{c:"a5",m:"medvi",b:"B2C",d:2,s:82,fit:1,t:`Marque DTC mono-produit pilotée par IA`,p:`Fabricant loué, des agents IA gèrent R&D produit, pubs, contenu et SAV de bout en bout.`},
+{c:"a5",m:"medvi",b:"B2B",d:3,s:80,fit:1,t:`Studio de marques DTC en série`,p:`Une usine à marques : l'IA lance une nouvelle marque par mois, fournisseurs et logistique loués.`},
+{c:"a5",m:"medvi",b:"B2C",d:3,s:74,fit:1,t:`Compléments alimentaires de niche`,p:`Façonnier loué, l'IA fait l'acquisition. Vérifie les allégations autorisées en FR/UE.`},
+{c:"a5",m:"medvi",b:"B2C",d:3,s:70,fit:1,t:`Cosmétique clean ciblée`,p:`Labo loué, l'IA gère marque et acquisition. Réglementation cosmétique FR à respecter.`},
+{c:"a5",m:"medvi",b:"B2C",d:2,s:66,fit:1,t:`Dropshipping premium curé par IA`,p:`Fini la camelote : l'IA sélectionne, contrôle et habille des produits de qualité, fournisseurs loués.`},
+{c:"a5",m:"medvi",b:"B2C",d:3,s:66,fit:1,t:`Marque food / snack healthy`,p:`Façonnier loué, l'IA pilote lancement et croissance d'une marque alimentaire de niche.`},
+{c:"a5",m:"medvi",b:"B2C",d:3,s:64,t:`Reconditionné verticalisé`,p:`Sourcing et logistique loués, l'IA fixe les prix et le contenu d'une catégorie précise.`},
+{c:"a5",m:"medvi",b:"B2C",d:2,s:62,fit:1,t:`Box / abonnement curé par IA`,p:`Logistique louée, l'IA personnalise une box passion (thé, beauté, gaming…) à l'échelle.`},
+{c:"a5",m:"medvi",b:"B2C",d:2,s:62,fit:1,t:`Print-on-demand piloté par tendances`,p:`Imprimeur loué, l'IA détecte les tendances et génère designs et pubs en continu.`},
+{c:"a5",m:"medvi",b:"B2C",d:2,s:58,fit:1,t:`Équipement de niche en DTC`,p:`Fabricant loué, l'IA gère une marque d'équipement (sport, hobby) de A à Z.`},
+// a6
+{c:"a6",m:"medvi",b:"B2C",d:2,s:70,t:`Ménage & aide à domicile par IA`,p:`Prestataires indépendants, l'IA gère matching, planning et qualité. Demande énorme.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:68,t:`Dépannage express (plomberie, élec)`,p:`Artisans indépendants, l'IA dispatche et coordonne les interventions urgentes.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:66,t:`Soins & visites pour seniors`,p:`Auxiliaires indépendants, l'IA planifie et rassure les familles. Marché qui explose.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:64,t:`Beauté à domicile on-demand`,p:`Coiffure, ongles : pros indépendants, l'IA gère réservation et tournées.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:62,t:`Garde d'enfants vérifiée`,p:`Nounous indépendantes, l'IA fait le matching de confiance et la logistique.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:60,t:`Cours particuliers premium`,p:`Profs indépendants, l'IA matche et suit la progression de l'élève.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:60,t:`Petits travaux / handyman`,p:`Bricoleurs indépendants, l'IA chiffre et planifie les petits chantiers.`},
+{c:"a6",m:"medvi",b:"B2B",d:2,s:58,fit:1,t:`Services pour e-commerçants`,p:`Photographes, packers : prestataires loués, l'IA orchestre la prod pour les marchands.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:58,t:`Déménagement à la demande`,p:`Transporteurs indépendants, l'IA chiffre et coordonne en temps réel.`},
+{c:"a6",m:"medvi",b:"B2C",d:2,s:56,t:`Toilettage & garde d'animaux`,p:`Pros indépendants, l'IA gère réservation, rappels et suivi.`},
+// a7
+{c:"a7",m:"medvi",b:"B2B",d:2,s:82,fit:1,t:`Agence marketing 100% agents IA`,p:`Ads, contenu, SEO produits par des agents IA ; l'humain supervise. Tu productises ton agence.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:80,fit:1,t:`Prospection B2B externalisée par IA`,p:`L'IA fait le sourcing, l'enrichissement et l'outreach ; tu vends des RDV qualifiés.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:76,fit:1,t:`Studio de design à la demande`,p:`L'IA produit, une direction artistique humaine valide. Abonnement design illimité.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:76,fit:1,t:`Support client externalisé par agents`,p:`Les agents IA résolvent, un superviseur humain garde la main. Vendu au ticket ou à l'abo.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:74,fit:1,t:`Agence vidéo UGC / ads par IA`,p:`L'IA génère les créatives publicitaires à l'échelle ; tu vends de la performance.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:72,fit:1,t:`Rédaction / contenu SEO à l'échelle`,p:`L'IA produit, un éditeur humain affine. Volume industriel pour les marques.`},
+{c:"a7",m:"medvi",b:"B2B",d:3,s:78,t:`Cabinet comptable augmenté par IA`,p:`Expert-comptable agréé loué, l'IA fait 80% du travail. Cadre de l'ordre à respecter.`},
+{c:"a7",m:"medvi",b:"B2B",d:3,s:74,t:`Cabinet juridique automatisé`,p:`Avocat loué, l'IA rédige et révise contrats et conformité pour les TPE.`},
+{c:"a7",m:"medvi",b:"B2B",d:2,s:70,t:`Cabinet RH / recrutement par IA`,p:`L'IA source et pré-qualifie, un recruteur valide. Facturé au recrutement.`},
+{c:"a7",m:"medvi",b:"B2B",d:3,s:64,t:`Conseil data / BI à la demande`,p:`L'IA analyse, un consultant valide. Rapports et dashboards en abonnement.`},
+// b1
+{c:"b1",m:"calai",b:"B2C",d:2,s:80,t:`Photo du repas → calories & macros`,p:`Le Cal AI exact : l'IA log tout sans saisie. Catégorie prouvée mais désormais très concurrentielle.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:76,fit:1,t:`Scan du frigo → plan anti-gaspi`,p:`Photo de ce qu'il reste → repas de la semaine et liste de courses. Usage quotidien viral.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:74,t:`Photo d'étiquette → verdict santé`,p:`Décode additifs et qualité selon TON objectif. Le créneau Yuka, version personnalisée.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:66,t:`Recettes selon macros + frigo`,p:`L'IA génère des recettes qui collent à tes objectifs et à ce que tu as sous la main.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:64,t:`Scan du ticket de courses → bilan`,p:`Photo du ticket → analyse nutritionnelle et budget de ton panier.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:60,t:`Photo d'un plat resto → estimation`,p:`Calories d'un plat au restaurant + alternatives plus saines à la carte.`},
+{c:"b1",m:"calai",b:"B2C",d:1,s:58,t:`Coach jeûne intermittent`,p:`L'IA personnalise les fenêtres de jeûne et motive au quotidien.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:56,t:`Scan compléments → utilité réelle`,p:`Photo d'un complément → interactions, dosage et vraie utilité selon ton profil.`},
+{c:"b1",m:"calai",b:"B2C",d:1,s:52,t:`Suivi hydratation & intolérances`,p:`L'IA corrèle ce que tu manges/bois avec ton ressenti pour repérer les déclencheurs.`},
+{c:"b1",m:"calai",b:"B2C",d:2,s:54,t:`Photo → portion bébé / enfant`,p:`Estime la portion et l'équilibre adaptés à l'âge de l'enfant.`},
+// b2
+{c:"b2",m:"calai",b:"B2C",d:3,s:76,t:`Vidéo de ton mouvement → correction de forme`,p:`Muscu, yoga : l'IA analyse ta posture et corrige comme un coach. Hook très partageable.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:72,t:`Photo du corps → suivi transformation`,p:`Suivi visuel + plan adapté, avec un cadre sain et bienveillant (pas de pression toxique).`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:70,t:`Coach muscu qui adapte chaque séance`,p:`L'IA ajuste charges, repos et exercices selon tes perfs réelles.`},
+{c:"b2",m:"calai",b:"B2C",d:1,s:62,t:`Programme maison sans matériel`,p:`L'IA construit des séances efficaces avec ce que tu as chez toi.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:64,t:`Course à pied : plan selon allure réelle`,p:`L'IA cale le plan d'entraînement sur tes vraies foulées et ta progression.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:60,t:`Scan de la salle → programme dispo`,p:`Photo des machines disponibles → séance optimisée sur le moment.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:60,t:`Prépa marathon / trail par IA`,p:`Plan progressif et adaptatif jusqu'au jour J.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:58,t:`Sommeil + sport corrélés`,p:`L'IA relie récupération et performance pour optimiser les deux.`},
+{c:"b2",m:"calai",b:"B2C",d:2,s:56,t:`Récupération & étirements ciblés`,p:`Selon la zone douloureuse (photo), l'IA propose mobilité et étirements.`},
+{c:"b2",m:"calai",b:"B2C",d:1,s:54,t:`Coach mobilité pour gens assis`,p:`Micro-séances pour ceux qui passent la journée devant un écran.`},
+// b3
+{c:"b3",m:"calai",b:"B2C",d:2,s:78,t:`Selfie → routine skincare + suivi peau`,p:`Diagnostic photo, routine personnalisée et suivi dans le temps. Abo récurrent, fort potentiel viral.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:72,t:`Photo cheveux → diagnostic & routine`,p:`Chute, soin, type de cheveu : l'IA établit un protocole et suit les résultats.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:70,t:`Colorimétrie → palette perso`,p:`Photo → tes couleurs de vêtements et maquillage qui te vont vraiment.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:68,t:`Score « glow-up » + plan`,p:`Bilan grooming positif et plan d'amélioration concret. Cadre valorisant, pas dévalorisant.`},
+{c:"b3",m:"calai",b:"B2C",d:3,s:66,t:`Essayage virtuel coiffure / couleur`,p:`L'IA simule coupes et couleurs sur ta photo avant de te lancer chez le coiffeur.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:62,t:`Analyse de cosmétiques selon ta peau`,p:`Photo d'un produit → compatibilité avec ton type de peau et tes objectifs.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:60,t:`Coach maquillage selon morphologie`,p:`L'IA guide le maquillage adapté à ton visage, étape par étape.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:58,t:`Suivi anti-âge avant/après`,p:`Photos régulières → l'IA mesure les progrès de ta routine.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:56,t:`Scan ongles / dents → conseils`,p:`Photo → repère les signes et propose soins et suivi.`},
+{c:"b3",m:"calai",b:"B2C",d:2,s:52,t:`Conseil parfum / style perso`,p:`Selon personnalité et budget, l'IA recommande parfums et pièces.`},
+// b4
+{c:"b4",m:"calai",b:"B2C",d:1,s:74,t:`Screenshot de conv → réponse parfaite`,p:`Le créneau « Rizz » : l'IA suggère le message qui matche. Catégorie virale prouvée chez les jeunes.`},
+{c:"b4",m:"calai",b:"B2C",d:2,s:72,t:`Coach de profil dating`,p:`Photos et bio optimisées par l'IA pour multiplier les matchs.`},
+{c:"b4",m:"calai",b:"B2C",d:2,s:66,t:`Photo → conseils look & confiance`,p:`Bilan d'apparence et conseils concrets, dans un cadre positif et bienveillant.`},
+{c:"b4",m:"calai",b:"B2C",d:2,s:64,t:`Entraîneur de conversation (roleplay)`,p:`L'IA simule des échanges pour s'entraîner à aborder et discuter sans stress.`},
+{c:"b4",m:"calai",b:"B2C",d:2,s:60,t:`Coach confiance & prise de parole`,p:`Exercices guidés pour gagner en assurance à l'oral et en société.`},
+{c:"b4",m:"calai",b:"B2C",d:1,s:58,t:`Aide aux messages délicats`,p:`L'IA t'aide à formuler un message difficile (relation, ex, famille) avec tact.`},
+{c:"b4",m:"calai",b:"B2C",d:1,s:54,t:`Préparateur de premier rendez-vous`,p:`Idées de lieux, sujets et brise-glace pour un date réussi.`},
+{c:"b4",m:"calai",b:"B2C",d:2,s:56,t:`Coach séduction vocal`,p:`Entraînement à l'oral : l'IA écoute et donne un retour sur ton aisance.`},
+{c:"b4",m:"calai",b:"B2C",d:1,s:50,t:`Compatibilité de couple par IA`,p:`Analyse ludique de compatibilité à partir de vos réponses.`},
+{c:"b4",m:"calai",b:"B2C",d:1,s:48,t:`Messages de réconciliation`,p:`L'IA génère le mot juste pour s'excuser ou renouer.`},
+// b5
+{c:"b5",m:"calai",b:"B2C",d:2,s:78,fit:1,t:`Décodeur d'analyses & ordonnances`,p:`Photo de tes résultats de labo → explication en clair. Douleur universelle, fort partage.`},
+{c:"b5",m:"calai",b:"B2C",d:3,s:70,t:`Photo grain de beauté → faut-il consulter ?`,p:`Orientation (pas diagnostic) : l'IA dit si une consultation s'impose. Cadre médical strict.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:68,t:`Suivi cycle & fertilité prédictif`,p:`L'IA prédit le cycle et accompagne, avec la confidentialité comme promesse.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:66,t:`Journal de symptômes → hypothèses`,p:`L'IA structure tes symptômes en pistes à vérifier avec un médecin.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:64,t:`Vérif d'interactions médicamenteuses`,p:`Photo de tes médicaments → alertes d'interactions et conseils de prudence.`},
+{c:"b5",m:"calai",b:"B2C",d:1,s:62,t:`Préparateur de RDV médical`,p:`Tu décris tes symptômes, l'IA génère un récap clair pour le médecin.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:60,t:`Photo d'un médicament → notice claire`,p:`Scan d'une boîte → posologie et précautions en langage simple.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:58,t:`Photo posture → alerte mal de dos`,p:`L'IA repère les déséquilibres et propose des exercices correctifs.`},
+{c:"b5",m:"calai",b:"B2C",d:2,s:56,t:`Détecteur de qualité de sommeil (audio)`,p:`Le micro analyse ta nuit et l'IA donne des pistes d'amélioration.`},
+{c:"b5",m:"calai",b:"B2C",d:1,s:54,t:`Coach respiration anti-stress`,p:`Exercices guidés en temps réel pour redescendre dans les pics de stress.`},
+// b6
+{c:"b6",m:"calai",b:"B2C",d:2,s:76,t:`Enregistre une réunion/cours → résumé + fiches`,p:`L'IA transcrit et sort résumé, actions et fiches de révision. Usage quotidien massif.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:74,fit:1,t:`Photo d'un courrier admin → explication + action`,p:`Impôts, URSSAF, CAF : l'IA décode et dit quoi faire. Douleur 100% française.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:72,t:`Note manuscrite → texte structuré + tâches`,p:`Photo de tes notes → document propre et liste d'actions.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:68,t:`Photo d'un problème → solution expliquée`,p:`Maths, code, formulaire : l'IA résout et explique pas à pas.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:66,t:`Scan de facture/reçu → compta perso`,p:`L'IA classe tes dépenses automatiquement à partir des photos.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:62,t:`PDF → podcast ou quiz`,p:`Transforme n'importe quel document en audio ou en quiz de révision.`},
+{c:"b6",m:"calai",b:"B2C",d:1,s:60,t:`Vocal → email/message bien écrit`,p:`Tu parles, l'IA rédige un message propre et adapté au ton voulu.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:58,t:`Scan de courrier → tri + échéances`,p:`L'IA trie ton courrier et te rappelle les dates importantes.`},
+{c:"b6",m:"calai",b:"B2C",d:1,s:56,t:`Capture d'écran → « explique-moi ça »`,p:`N'importe quelle capture → explication simple et immédiate.`},
+{c:"b6",m:"calai",b:"B2C",d:2,s:50,t:`Photo garde-robe → inventaire & idées`,p:`L'IA catalogue tes vêtements et propose des tenues.`},
+// b7
+{c:"b7",m:"calai",b:"B2C",d:2,s:76,t:`Selfie → portraits pro IA`,p:`Photos LinkedIn/CV niveau studio à partir de selfies. Catégorie qui fait déjà des millions.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:74,fit:1,t:`Photo produit amateur → visuel e-commerce pro`,p:`Transforme une photo au téléphone en visuel vendeur. Pile dans ta zone e-commerce.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:72,t:`Photo d'intérieur → relooking déco`,p:`L'IA réaménage ta pièce et propose des styles avant achat.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:66,t:`Retouche photo niveau studio en 1 tap`,p:`Lumière, peau, fond : l'IA sublime n'importe quelle photo instantanément.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:64,t:`Croquis → logo / design fini`,p:`Un gribouillis devient un logo ou un visuel exploitable.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:62,t:`Photo de pièce → simulation travaux`,p:`Visualise peinture, sol ou aménagement avant de te lancer.`},
+{c:"b7",m:"calai",b:"B2C",d:1,s:60,t:`Restaure & colorise vieilles photos`,p:`L'IA répare et colorise les photos de famille abîmées.`},
+{c:"b7",m:"calai",b:"B2C",d:1,s:58,t:`Avatars & photos de profil stylés`,p:`Génère des avatars cohérents pour réseaux et jeux.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:56,t:`Photo jardin → plan d'aménagement`,p:`L'IA propose un plan paysager à partir d'une photo de ton extérieur.`},
+{c:"b7",m:"calai",b:"B2C",d:2,s:54,t:`Photo de tenue → conseils style`,p:`L'IA note ta tenue et suggère des pièces assorties.`},
+// b8
+{c:"b8",m:"calai",b:"B2C",d:2,s:74,fit:1,t:`Une vidéo → clips viraux découpés`,p:`L'IA repère les meilleurs moments et sort des clips prêts pour TikTok/Reels. Outil créateur.`},
+{c:"b8",m:"calai",b:"B2C",d:3,s:74,fit:1,t:`Idée → vidéo courte prête à poster`,p:`Texte/idée → vidéo verticale montée, sous-titrée, prête pour les réseaux.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:66,t:`Sous-titres + traduction vidéo auto`,p:`L'IA sous-titre et traduit tes vidéos pour toucher plus large.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:64,t:`Voix off IA naturelle`,p:`Génère des voix off crédibles pour vidéos et podcasts de créateurs.`},
+{c:"b8",m:"calai",b:"B2C",d:3,s:62,t:`Avatar parlant à partir d'une photo`,p:`Une photo → un présentateur IA qui parle, pour du contenu sans caméra.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:58,t:`Chanson perso (anniv, mariage)`,p:`L'IA compose une chanson sur mesure pour une occasion.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:56,t:`Nettoyage audio podcast en 1 clic`,p:`L'IA enlève bruit et hésitations pour un son pro.`},
+{c:"b8",m:"calai",b:"B2C",d:3,s:60,t:`Doublage / clonage de voix`,p:`Double ton contenu dans plusieurs langues avec ta propre voix.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:54,t:`Musiques d'ambiance libres de droits`,p:`Génère des pistes sur mesure et sans souci de licence.`},
+{c:"b8",m:"calai",b:"B2C",d:2,s:52,t:`Idée → storyboard & script vidéo`,p:`L'IA structure ton concept en script et plan de tournage.`},
+// b9
+{c:"b9",m:"calai",b:"B2C",d:2,s:76,t:`Conversation pour apprendre une langue`,p:`L'IA parle avec toi et corrige sans casser le flow. La vraie pratique, à l'échelle.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:74,t:`Photo du problème → tuteur qui explique`,p:`Devoirs : photo de l'exo → explication pas à pas, sans donner bêtement la réponse.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:70,t:`Cours → flashcards & quiz auto`,p:`Tes documents deviennent un jeu de révision personnalisé.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:66,fit:1,t:`Prépa entretien d'embauche (roleplay)`,p:`L'IA simule l'entretien et te coache sur tes réponses.`},
+{c:"b9",m:"calai",b:"B2C",d:1,s:62,t:`Histoires personnalisées pour enfants`,p:`Prénom et thème → une histoire unique chaque soir.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:60,t:`Explique un concept au niveau choisi`,p:`De « explique à un enfant » à « niveau expert » : l'IA s'adapte.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:58,t:`Coach prononciation (audio)`,p:`L'IA écoute et corrige ton accent dans la langue cible.`},
+{c:"b9",m:"calai",b:"B2C",d:2,s:54,t:`Coach d'écriture (CV, lettre, mémoire)`,p:`L'IA structure et améliore tes textes importants.`},
+{c:"b9",m:"calai",b:"B2C",d:3,s:56,t:`Apprends un instrument (retour audio)`,p:`L'IA écoute ton jeu et te guide comme un prof de musique.`},
+{c:"b9",m:"calai",b:"B2C",d:1,s:50,t:`Photo d'un objet → mot dans une langue`,p:`Apprends le vocabulaire de ce qui t'entoure en le prenant en photo.`},
+// c1
+{c:"c1",m:"agent",b:"B2B",d:3,s:86,fit:1,t:`Agent SAV e-commerce`,p:`Résout 60–70% des tickets seul, passe la main quand il faut. ROI évident, ta niche exacte.`},
+{c:"c1",m:"agent",b:"B2B",d:2,s:82,fit:1,t:`Agent SDR de bout en bout`,p:`Sourcing, enrichissement, qualification, prise de RDV : l'agent fait tout le haut de funnel.`},
+{c:"c1",m:"agent",b:"B2B",d:3,s:78,t:`Agent assistant médical`,p:`Génère les comptes-rendus de consultation pendant que le praticien soigne. Vertical premium.`},
+{c:"c1",m:"agent",b:"B2B",d:3,s:76,t:`Agent comptable`,p:`Saisie, rapprochement, relances : l'agent abat le gros du travail, l'humain valide.`},
+{c:"c1",m:"agent",b:"B2B",d:2,s:74,t:`Agent recruteur`,p:`Sourcing et pré-entretiens automatisés, facturés au recrutement réussi.`},
+{c:"c1",m:"agent",b:"B2B",d:3,s:72,t:`Agent juridique`,p:`Rédaction et revue de contrats à l'échelle, supervisées par un avocat.`},
+{c:"c1",m:"agent",b:"B2B",d:2,s:70,fit:1,t:`Agent rédacteur SEO`,p:`Production de contenu optimisé en volume, avec contrôle éditorial humain.`},
+{c:"c1",m:"agent",b:"B2B",d:3,s:68,t:`Agent analyste data`,p:`Transforme les données en rapports et insights actionnables à la demande.`},
+{c:"c1",m:"agent",b:"B2B",d:2,s:66,t:`Agent de modération`,p:`Modère contenus et communautés 24/7 avec escalade vers l'humain.`},
+{c:"c1",m:"agent",b:"B2B",d:2,s:64,t:`Agent traducteur / localisation`,p:`Localise contenu et produits en continu, sans agence de traduction.`},
+// c2
+{c:"c2",m:"agent",b:"B2B",d:2,s:80,fit:1,t:`Agent de cold email / LinkedIn`,p:`Messages personnalisés à l'échelle qui obtiennent vraiment des réponses.`},
+{c:"c2",m:"agent",b:"B2B",d:3,s:78,fit:1,t:`Agent qui gère tes pubs`,p:`Création, lancement et optimisation des campagnes en autonomie, vers un objectif.`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:76,fit:1,t:`Agent SEO / GEO`,p:`Optimise pour Google ET les moteurs IA (la nouvelle bataille de la visibilité).`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:72,fit:1,t:`Agent de qualification entrante`,p:`Discute avec les visiteurs et transforme le chat en rendez-vous qualifiés.`},
+{c:"c2",m:"agent",b:"B2B",d:1,s:70,fit:1,t:`Agent de réactivation de leads dormants`,p:`Relance les vieux contacts avec le bon message au bon moment.`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:70,fit:1,t:`Agent de propositions commerciales`,p:`Transforme un appel découverte en proposition qui convertit.`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:68,fit:1,t:`Agent community manager`,p:`Publie, répond et anime sur plusieurs réseaux dans la voix de la marque.`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:66,fit:1,t:`Agent de nurturing email`,p:`Séquences automatiques qui réchauffent les prospects jusqu'à la vente.`},
+{c:"c2",m:"agent",b:"B2B",d:1,s:66,t:`Agent e-réputation`,p:`Répond aux avis et gère l'image en continu, partout.`},
+{c:"c2",m:"agent",b:"B2B",d:2,s:64,fit:1,t:`Agent de veille concurrentielle`,p:`Surveille prix, offres et pubs des concurrents en permanence.`},
+// c3
+{c:"c3",m:"agent",b:"B2B",d:2,s:70,t:`Agent de traitement de factures`,p:`Capture, vérifie et enregistre factures et notes de frais sans saisie humaine.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:68,fit:1,t:`Agent de gestion de stock & réassort`,p:`Anticipe les ruptures et commande au bon moment.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:68,t:`Agent de support interne (RH/IT)`,p:`Répond aux questions des salariés (congés, paie, accès) en self-service.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:66,t:`Agent de reporting automatisé`,p:`Produit KPI et dashboards à jour sans intervention.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:66,t:`Agent de saisie & nettoyage de données`,p:`Fiabilise et structure les données éparpillées en continu.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:64,t:`Agent d'onboarding clients/employés`,p:`Pilote parcours, accès et suivi des premiers jours automatiquement.`},
+{c:"c3",m:"agent",b:"B2B",d:3,s:64,t:`Agent de conformité continue`,p:`Surveille et contrôle le respect des règles en temps réel.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:62,t:`Agent de scheduling intelligent`,p:`Cale réunions et créneaux sans aller-retours.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:60,t:`Agent de gestion documentaire`,p:`Classe, retrouve et résume tous les documents de l'entreprise.`},
+{c:"c3",m:"agent",b:"B2B",d:2,s:58,t:`Agent de suivi de projet & relances`,p:`Garde les projets sur les rails et relance les retards.`},
+// c4
+{c:"c4",m:"agent",b:"B2B",d:3,s:80,fit:1,t:`Agent e-commerce all-in-one`,p:`Fiches produit, SAV, pubs, avis : un seul agent qui fait tourner la boutique. Ta niche, packagée.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:74,t:`Agent cabinet médical`,p:`RDV, rappels anti-lapins, liste d'attente : l'agent gère le secrétariat.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:72,t:`Agent immobilier`,p:`Qualifie les locataires, organise les visites et relance, à la place de l'agent.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:68,t:`Agent restaurant`,p:`Réservations, avis et anti no-show automatisés pour les restos.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:66,t:`Agent BTP / artisan`,p:`Devis, planning et relances clients pour les pros du bâtiment.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:64,t:`Agent salon / beauté`,p:`Prise de RDV, fidélité et rappels pour coiffeurs et esthéticiennes.`},
+{c:"c4",m:"agent",b:"B2B",d:3,s:62,t:`Agent assurance / courtage`,p:`Devis, souscription et gestion de sinistres pour les courtiers.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:60,t:`Agent agence de voyage`,p:`Itinéraires, réservations et suivi client de bout en bout.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:60,t:`Agent logistique / transport`,p:`Suivi des expéditions et gestion des litiges automatisés.`},
+{c:"c4",m:"agent",b:"B2B",d:2,s:58,t:`Agent éducation / formation`,p:`Inscriptions, suivi des apprenants et relances pour les organismes.`},
+];
+
+const TOP = [
+ {r:"01",t:`Studio de marques DTC piloté par agents IA`,m:"medvi",b:"B2B",d:3,fit:1,
+  pb:`Une usine à marques e-commerce : des agents IA gèrent R&D produit, création, pubs et SAV. Fabricant et logistique loués. Tu lances une marque par mois.`,
+  why:`C'est le modèle Medvi appliqué à TON monde. Tu possèdes marque + acquisition (ta force), tu loues le reste. Chaque marque qui marche peut faire 7–8 chiffres ; le portefeuille vise la licorne.`,
+  money:`Marge produit DTC (40–70%) × volume, multiplié par le nombre de marques.`,
+  moat:`Ta machine d'acquisition + les données qui s'améliorent à chaque lancement. Le système de lancement EST l'actif.`,
+  risk:`La distribution coûte cher (souviens-toi des 770 k$/mois de Cal AI). Commence par UNE marque, prouve l'acquisition rentable, puis industrialise.`},
+ {r:"02",t:`Agent e-commerce all-in-one`,m:"agent",b:"B2B",d:3,fit:1,
+  pb:`Un seul agent IA qui fait tourner une boutique : fiches produit, SAV, pubs, avis, réassort. Vendu aux e-commerçants comme du travail accompli.`,
+  why:`Tu vends d'abord le service via ton agence, puis tu le produitises. Marché énorme (Shopify/WooCommerce), rétention forte car critique. Chemin direct vers un SaaS B2B scalable.`,
+  money:`Abo 99–499 €/mois par boutique, ou au résultat (ticket résolu, CA généré).`,
+  moat:`L'intégration profonde au workflow du marchand + tes données d'opération. Plus il l'utilise, plus c'est dur à quitter.`,
+  risk:`Faire « tout » est dur techniquement. Commence par UN module killer (SAV ou fiches) et élargis.`},
+ {r:"03",t:`Agence marketing / prospection 100% agents IA`,m:"medvi",b:"B2B",d:2,fit:1,
+  pb:`Ads, contenu, SEO et prospection produits par des agents IA ; l'humain supervise le jugement. Tu vends de la performance, pas des heures.`,
+  why:`Le démarrage le plus rapide et le moins risqué pour TOI : tu fais déjà ça. Marges énormes, zéro infra à construire, cash immédiat qui finance les paris plus ambitieux.`,
+  money:`Retainer 1 500–5 000 €/mois, ou au résultat (RDV, leads, ventes).`,
+  moat:`Tes systèmes d'agents + tes résultats prouvés. La réputation et les cas clients deviennent le moat.`,
+  risk:`Marché qui se remplit vite. Différencie-toi par une niche (e-commerce FR) et des résultats chiffrés, pas par « on fait de l'IA ».`},
+ {r:"04",t:`Téléconsultation verticale (dermato / santé masculine)`,m:"medvi",b:"B2C",d:3,
+  pb:`Le créneau Medvi, version santé moins explosive mais plus défendable : médecins agréés loués, l'IA fait le tri photo, le parcours et le support.`,
+  why:`Potentiel de revenus énorme (abonnements récurrents en santé), forte rétention. La spécialisation crée la confiance et limite la concurrence.`,
+  money:`Abonnement mensuel de suivi + marge sur les produits/consultations.`,
+  moat:`La marque de confiance et le parcours fluide. Les patients restent là où ça marche.`,
+  risk:`Très réglementé en France/UE. Tu loues de VRAIS médecins agréés, tu respectes la prescription, tu ne fais JAMAIS de faux profils ni de faux avant/après. C'est non négociable.`},
+ {r:"05",t:`Selfie → routine skincare + suivi peau`,m:"calai",b:"B2C",d:2,
+  pb:`Diagnostic photo de la peau, routine personnalisée et suivi dans le temps. Le hook est démontrable et partageable façon Cal AI.`,
+  why:`Beauté + santé = ARPU élevé et abonnement récurrent. Catégorie où des apps font déjà des millions. Le suivi crée une boucle de données qui s'améliore.`,
+  money:`Abo 5–10 €/mois, + commission sur produits recommandés.`,
+  moat:`Les données de suivi peau dans le temps (s'améliorent avec l'usage) + une marque beauté de confiance.`,
+  risk:`Acquisition payante indispensable (TikTok/Insta). Et le produit doit vraiment marcher : la beauté pardonne mal les promesses creuses.`},
+ {r:"06",t:`Selfie → portraits pro IA`,m:"calai",b:"B2C",d:2,
+  pb:`Des photos LinkedIn/CV niveau studio à partir de simples selfies. Usage clair, résultat « wow » immédiat et partageable.`,
+  why:`Catégorie déjà prouvée à plusieurs millions de revenus. Achat impulsif, viralité naturelle (les gens montrent le résultat). Build accessible.`,
+  money:`Paiement à l'usage (pack de photos) ou abo léger.`,
+  moat:`Qualité et style de rendu + distribution. Plus dur à défendre seul → mise tout sur l'acquisition et la marque.`,
+  risk:`Concurrence forte et qualité qui se banalise quand les modèles progressent. Gagne par un angle (niche pro, style signature) et le coût d'acquisition.`},
+ {r:"07",t:`Compte pro IA pour micro-entrepreneurs FR`,m:"medvi",b:"B2B",d:3,fit:1,
+  pb:`Néobanque verticale : infra bancaire louée, l'IA gère facturation, URSSAF, TVA et déclarations. La paperasse de l'auto-entrepreneur, automatisée.`,
+  why:`Douleur française massive et récurrente, marché immense (millions de micro-entrepreneurs), forte rétention (l'argent ne change pas de banque facilement).`,
+  money:`Abo 9–29 €/mois + revenus d'interchange et services.`,
+  moat:`L'intégration admin FR + la confiance. Très collant une fois adopté.`,
+  risk:`Réglementation et conformité lourdes. Tu loues un partenaire BaaS agréé et tu cadres tout juridiquement dès le départ.`},
+ {r:"08",t:`Décodeur de courriers administratifs FR`,m:"calai",b:"B2C",d:2,fit:1,
+  pb:`Photo d'un courrier d'impôts, URSSAF ou CAF → explication en clair et actions à faire. Une douleur 100% française quasi sans bon outil.`,
+  why:`Avantage local imbattable face aux acteurs US. Usage émotionnel fort (l'angoisse de l'admin), potentiel viral de bouche-à-oreille, pont naturel vers des services payants.`,
+  money:`Freemium + premium ~5 €/mois pour le suivi des dossiers et relances.`,
+  moat:`La spécificité FR + une base d'utilisateurs qui revient à chaque courrier reçu.`,
+  risk:`Monétisation B2C exigeante : il faut beaucoup de volume. L'angle : devenir la porte d'entrée vers des services admin payants.`},
+ {r:"09",t:`Agent SDR de bout en bout`,m:"agent",b:"B2B",d:2,fit:1,
+  pb:`Un agent IA qui fait tout le haut de funnel : trouve les prospects, enrichit, personnalise, contacte et prend les rendez-vous.`,
+  why:`Chaque entreprise B2B veut plus de RDV qualifiés. Tu peux le vendre au résultat et le brancher sur ta propre prospection d'abord (dogfooding parfait).`,
+  money:`Abo 200–1 000 €/mois ou paiement par RDV qualifié.`,
+  moat:`Tes playbooks d'outreach + les données de ce qui convertit par secteur.`,
+  risk:`La délivrabilité et l'anti-spam sont des vrais sujets. Soigne la qualité, pas le volume brut, ou tu te grilles.`},
+ {r:"10",t:`Une vidéo → clips viraux courts`,m:"calai",b:"B2C",d:2,fit:1,
+  pb:`L'IA repère les meilleurs moments d'une vidéo longue et sort des clips montés, sous-titrés, prêts pour TikTok/Reels.`,
+  why:`Le marché créateur explose et tu en parles leur langue. Usage récurrent (chaque vidéo = des clips), démo instantanée, viralité intégrée (les clips portent ta marque).`,
+  money:`Abo 15–49 €/mois selon le volume de clips.`,
+  moat:`La qualité du montage automatique + une communauté de créateurs fidèles.`,
+  risk:`Catégorie déjà concurrentielle (Opus, etc.). Gagne par une niche (langue FR, un format précis) ou une qualité supérieure.`},
+ {r:"11",t:`Coach screenshot dating (« Rizz »)`,m:"calai",b:"B2C",d:1,fit:0,
+  pb:`Capture d'une conversation → l'IA suggère le message parfait pour matcher. Usage ultra-fréquent chez les jeunes.`,
+  why:`Catégorie virale prouvée (apps à plusieurs millions). Build très simple, achat impulsif, partage naturel entre amis. Idéal pour apprendre la mécanique d'acquisition mobile.`,
+  money:`Abo léger ou crédits par suggestion.`,
+  moat:`Faible en soi → c'est un jeu de distribution et de marque pure. Bon terrain d'entraînement, pas un château fort.`,
+  risk:`Peu défendable et dépendant des stores. Vois-le comme une première victoire rapide pour financer plus gros, pas comme la licorne.`},
+ {r:"12",t:`Marque de compléments / cosmétique nichée pilotée IA`,m:"medvi",b:"B2C",d:3,fit:1,
+  pb:`DTC santé/beauté : façonnier ou labo loué, des agents IA gèrent marque, contenu et acquisition pour un segment précis.`,
+  why:`Marges fortes, achat répété (abonnement), marché géant. Combine ta force e-commerce avec le levier Medvi. Un best-seller peut faire 8 chiffres.`,
+  money:`Abonnement produit (LTV élevée) avec marge DTC importante.`,
+  moat:`Marque + communauté + formulation/positionnement propre. La confiance se construit et se garde.`,
+  risk:`Allégations santé très encadrées en FR/UE : interdiction de promettre des effets non autorisés. Respecte la réglementation compléments/cosmétiques à la lettre.`},
+];
+
+/* ================= RENDER ================= */
+function tierOf(s){ if(s>=80)return{l:"Licorne",c:"var(--gold)"}; if(s>=68)return{l:"Très gros",c:"var(--teal)"}; if(s>=56)return{l:"Gros",c:"var(--blue)"}; return{l:"Niche+",c:"var(--muted-2)"}; }
+const diffLabel={1:"Facile",2:"Moyen",3:"Dur"};
+const diffColor={1:"var(--green)",2:"var(--gold)",3:"var(--red)"};
+const modelLabel={medvi:"Medvi",calai:"Cal AI",agent:"Agent"};
+
+function chips(o){
+  let h = `<span class="chip ${o.m}">${modelLabel[o.m]}</span>`;
+  h += `<span class="chip ${o.b==='B2B'?'b2b':'b2c'}">${o.b}</span>`;
+  h += `<span class="chip d"><span class="dot" style="background:${diffColor[o.d]}"></span>${diffLabel[o.d]}</span>`;
+  return h;
+}
+
+// top picks
+document.getElementById('picks').innerHTML = TOP.map(p=>{
+  let badges = `<span class="chip ${p.m}">${modelLabel[p.m]}</span>`;
+  if(p.fit) badges += `<span class="badge fit">FIT TOI</span>`;
+  return `<article class="pick">
+    <div class="pick-top"><span class="rank">${p.r}</span><div class="pick-badges">${badges}</div></div>
+    <h3>${p.t}</h3>
+    <p class="pb">${p.pb}</p>
+    <dl>
+      <dt>Pourquoi ça peut devenir énorme</dt><dd>${p.why}</dd>
+      <dt>Monétisation</dt><dd class="money">${p.money}</dd>
+      <dt>Le moat (pourquoi ça résiste)</dt><dd>${p.moat}</dd>
+      <dt>Le risque à gérer</dt><dd class="risk">${p.risk}</dd>
+    </dl>
+    <div class="chips" style="margin-top:14px">${chips(p)}</div>
+  </article>`;
+}).join('');
+
+// catalogue
+const gridEl=document.getElementById('grid');
+const state={q:"",model:"all",type:"all"};
+
+function render(){
+  const q=state.q.trim().toLowerCase();
+  let total=0, html="";
+  PLAYBOOKS.forEach(pbk=>{
+    const pbCats=CATS.filter(c=>c.pb===pbk.id);
+    let pbHtml="", pbCount=0;
+    pbCats.forEach(cat=>{
+      let items=IDEAS.filter(i=>i.c===cat.id);
+      items=items.filter(i=>{
+        if(state.model!=="all" && i.m!==state.model) return false;
+        if(state.type!=="all" && i.b!==state.type) return false;
+        if(q && !(i.t.toLowerCase().includes(q)||i.p.toLowerCase().includes(q)||cat.n.toLowerCase().includes(q))) return false;
+        return true;
+      });
+      if(!items.length) return;
+      pbCount+=items.length; total+=items.length;
+      const idx=cat.id.toUpperCase();
+      pbHtml += `<section class="catsec">
+        <div class="cat-head"><span class="cat-id">${idx}</span><h3 class="cat-name">${cat.n}</h3><span class="cat-n">${items.length}</span></div>
+        <div class="grid">`+
+        items.map(i=>{
+          const t=tierOf(i.s);
+          return `<article class="card">
+            <div class="card-top"><span class="meter"><span class="bar"><i style="width:${i.s}%;background:${t.c}"></i></span><span class="tier" style="color:${t.c}">${t.l}</span></span>${i.fit?'<span class="badge fit">FIT</span>':''}</div>
+            <h4>${i.t}</h4><p>${i.p}</p>
+            <div class="chips">${chips(i)}</div>
+          </article>`;
+        }).join('')+
+        `</div></section>`;
+    });
+    if(!pbCount) return;
+    html += `<div class="playbook ${pbk.cls}">
+      <div class="pb-head"><p class="pb-kicker">${pbk.kicker}</p><h2>${pbk.name}</h2><p>${pbk.desc}</p></div>
+      ${pbHtml}
+    </div>`;
+  });
+  gridEl.innerHTML=html;
+  document.getElementById('empty').style.display=total?'none':'block';
+  document.getElementById('count').innerHTML=`<b>${total}</b> idée${total>1?'s':''}`;
+}
+
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.querySelectorAll('#seg-model .seg').forEach(b=>b.addEventListener('click',()=>{
+  state.model=b.dataset.model;
+  document.querySelectorAll('#seg-model .seg').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  render();
+}));
+document.querySelectorAll('#seg-type .seg').forEach(b=>b.addEventListener('click',()=>{
+  state.type=b.dataset.type;
+  document.querySelectorAll('#seg-type .seg').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  render();
+}));
+document.getElementById('reset').addEventListener('click',()=>{
+  state.q="";state.model="all";state.type="all";
+  document.getElementById('q').value="";
+  document.querySelectorAll('#seg-model .seg').forEach(x=>x.setAttribute('aria-pressed',x.dataset.model==="all"));
+  document.querySelectorAll('#seg-type .seg').forEach(x=>x.setAttribute('aria-pressed',x.dataset.type==="all"));
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
